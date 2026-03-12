@@ -1,10 +1,10 @@
 import Groq from "groq-sdk";
 
-const API_KEY = import.meta.env.VITE_GROQ_API_KEY;
+const API_KEY = process.env.NEXT_PUBLIC_GROQ_API_KEY;
 
 if (!API_KEY) {
     console.error(
-        "❌ VITE_GROQ_API_KEY is not set! Add it to your .env file and restart the dev server."
+        "❌ NEXT_PUBLIC_GROQ_API_KEY is not set! Add it to your .env file and restart the dev server."
     );
 }
 
@@ -59,7 +59,7 @@ async function getWorkingModel() {
 export async function sendHealthMessage(messages, userMessage) {
     if (!API_KEY) {
         throw new Error(
-            "Groq API key is missing. Set VITE_GROQ_API_KEY in your .env file and restart the dev server."
+            "Groq API key is missing. Set NEXT_PUBLIC_GROQ_API_KEY in your .env file and restart the dev server."
         );
     }
 
@@ -110,7 +110,7 @@ export async function sendHealthMessage(messages, userMessage) {
         // Provide more specific error messages
         if (error.message?.includes("invalid_api_key") || error.message?.includes("API key") || error.status === 401) {
             throw new Error(
-                "Your Groq API key is invalid. Please generate a new key at https://console.groq.com and update VITE_GROQ_API_KEY in your .env file."
+                "Your Groq API key is invalid. Please generate a new key at https://console.groq.com and update NEXT_PUBLIC_GROQ_API_KEY in your .env file."
             );
         }
         if (error.message?.includes("rate_limit") || error.message?.includes("429") || error.status === 429) {
@@ -141,7 +141,7 @@ export async function sendHealthMessage(messages, userMessage) {
 export async function analyzeFileContent(extractedText, fileType) {
     if (!API_KEY) {
         throw new Error(
-            "Groq API key is missing. Set VITE_GROQ_API_KEY in your .env file and restart the dev server."
+            "Groq API key is missing. Set NEXT_PUBLIC_GROQ_API_KEY in your .env file and restart the dev server."
         );
     }
 

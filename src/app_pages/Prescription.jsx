@@ -23,7 +23,7 @@ export default function Prescription() {
             const formData = new FormData();
             formData.append('file', new Blob(['test'], { type: 'text/plain' }), 'prescription.jpg');
 
-            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+            const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
             const response = await fetch(`${API_URL}/api/prescription/scan`, {
                 method: 'POST',
                 body: formData

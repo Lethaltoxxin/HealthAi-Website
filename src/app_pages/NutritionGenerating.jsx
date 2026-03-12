@@ -25,7 +25,7 @@ export default function NutritionGenerating() {
         localStorage.setItem('generatedPlan', JSON.stringify(localPlan));
 
         // Optionally try backend in background (non-blocking)
-        const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+        const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
         fetch(`${API_URL}/api/diet/generate`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
