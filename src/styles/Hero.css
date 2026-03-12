@@ -1,0 +1,12 @@
+/* Clear any previous geometry */
+
+.word-wrapper {
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    /* Specific bounding box fix to stop clipping of the 92px condensed typography descenders */
+    padding-bottom: 0.15em;
+    padding-top: 0.15em;
+    margin-top: -0.15em;
+    margin-bottom: -0.15em;
+}

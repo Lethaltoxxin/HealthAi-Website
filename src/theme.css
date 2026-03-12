@@ -1,0 +1,83 @@
+:root {
+  /* MASTER DESIGN TOKENS - HEALTHAI APP */
+
+  /* Color Palette - Navy (Dark Surfaces) */
+  --navy-950: #070D12;
+  --navy-900: #0A1118;
+  --navy-800: #0F1923;
+  --navy-600: #162A3A;
+
+  /* Color Palette - Teal (Accents) */
+  --teal-400: #00D4AA;
+  --teal-300: #33EACC;
+  --teal-100: #C6F7EB;
+
+  /* Color Palette - Cream (Light Surfaces) */
+  --cream-50: #F0FAF7;
+  --cream-100: #E8F5F0;
+  --cream-200: #D6EDE5;
+
+  /* Text Colors */
+  --text-white: #FFFFFF;
+  --text-off: #D0F0E8;
+  --text-dark: #0A1A16;
+  --text-muted: #6B8A84;
+
+  /* Status / Score Colors */
+  --score-green: #22C55E;
+  --score-amber: #F59E0B;
+  --score-red: #EF4444;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(13, 11, 31, 0.12);
+  --shadow-float: 0 8px 40px rgba(0, 229, 192, 0.15);
+
+  /* Typography */
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Border Radius */
+  --radius-card: 20px;
+  --radius-pill: 999px;
+  --radius-input: 16px;
+  --radius-icon: 14px;
+
+  /* Spacing System (4px base) */
+  --sp-4: 4px;
+  --sp-8: 8px;
+  --sp-12: 12px;
+  --sp-16: 16px;
+  --sp-20: 20px;
+  --sp-24: 24px;
+  --sp-32: 32px;
+  --sp-40: 40px;
+
+  /* Layout Constants */
+  --page-px: 16px;
+  --easing: 0.2s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-light);
+  border-radius: var(--radius-full);
+}

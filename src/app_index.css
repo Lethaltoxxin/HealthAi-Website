@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
+@import './theme.css';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    background-color: #050505;
+    /* Deep dark canvas for desktop */
+    color: var(--text-dark);
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#root {
+    width: 100%;
+    max-width: 390px;
+    /* Base mobile width */
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    background-color: var(--cream-50);
+    /* Default base, screens might override */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    /* Outer shadow for the app frame */
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
+    /* Hide scrollbar for a cleaner mobile app look */
+    background: transparent;
+}

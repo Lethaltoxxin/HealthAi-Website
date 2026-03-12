@@ -1,0 +1,14 @@
+.container {
+    max-width: 430px;
+    margin: 0 auto;
+    min-height: 100dvh;
+    background: var(--bg-page);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.main {
+    min-height: 100dvh;
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+    overflow-y: auto;
+}

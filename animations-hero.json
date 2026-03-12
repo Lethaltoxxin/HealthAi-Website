@@ -1,0 +1,98 @@
+{
+    "keyframes": [
+        "@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }",
+        "@keyframes ww-ec46957b-d8ff-489a-9116-9b6db15ea491-launcherOnOpen { 0% { transform: translateY(0px) rotate(0deg); } 30% { transform: translateY(-5px) rotate(2deg); } 60% { transform: translateY(0px) rotate(0deg); } 90% { transform: translateY(-1px) rotate(0deg); } 100% { transform: translateY(0px) rotate(0deg); } }",
+        "@keyframes ww-ec46957b-d8ff-489a-9116-9b6db15ea491-widgetOnLoad { 0% { opacity: 0; } 100% { opacity: 1; } }"
+    ],
+    "computed_css": {
+        "animationName": "none",
+        "transform": "none",
+        "opacity": "1",
+        "transition": "all",
+        "willChange": "transform",
+        "lineHeight": "110%",
+        "fontSize": "112px"
+    },
+    "get_animations": [],
+    "inline_code": [
+        "const lenis = new Lenis({ lerp: 0.1, wheelMultiplier: 0.7, infinite: false, gestureOrientation: 'vertical' });",
+        "function raf(time) { lenis.raf(time); requestAnimationFrame(raf); } requestAnimationFrame(raf);"
+    ],
+    "manual_samples": [
+        {
+            "timestamp": 1772828374049,
+            "elements": [
+                {
+                    "text": "Systems",
+                    "transform": "none",
+                    "opacity": "1"
+                },
+                {
+                    "text": "that",
+                    "transform": "none",
+                    "opacity": "1"
+                }
+            ]
+        },
+        {
+            "timestamp": 1772828374255,
+            "elements": [
+                {
+                    "text": "Systems",
+                    "transform": "none",
+                    "opacity": "1"
+                },
+                {
+                    "text": "that",
+                    "transform": "none",
+                    "opacity": "1"
+                }
+            ]
+        },
+        {
+            "timestamp": 1772828374456,
+            "elements": [
+                {
+                    "text": "Systems",
+                    "transform": "none",
+                    "opacity": "1"
+                },
+                {
+                    "text": "that",
+                    "transform": "none",
+                    "opacity": "1"
+                }
+            ]
+        },
+        {
+            "timestamp": 1772828374661,
+            "elements": [
+                {
+                    "text": "Systems",
+                    "transform": "none",
+                    "opacity": "1"
+                },
+                {
+                    "text": "that",
+                    "transform": "none",
+                    "opacity": "1"
+                }
+            ]
+        },
+        {
+            "timestamp": 1772828374861,
+            "elements": [
+                {
+                    "text": "Systems",
+                    "transform": "none",
+                    "opacity": "1"
+                },
+                {
+                    "text": "that",
+                    "transform": "none",
+                    "opacity": "1"
+                }
+            ]
+        }
+    ]
+}
