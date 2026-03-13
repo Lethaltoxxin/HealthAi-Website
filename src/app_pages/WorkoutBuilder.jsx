@@ -3,7 +3,7 @@ import { useRouter } from 'next/navigation';
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Dumbbell, Calendar, Activity, Play, CheckCircle, Clock } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Dumbbell, Calendar, Activity, Play, CheckCircle, Clock } from 'lucide-react';
 import { workoutGenerate, logEvent } from '../api';
 import styles from './WorkoutBuilder.module.css';
 

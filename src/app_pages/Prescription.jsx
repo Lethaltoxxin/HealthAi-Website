@@ -2,6 +2,7 @@
 import { useRouter } from 'next/navigation';
 
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { Camera, Plus, Check, Clock, AlertTriangle, ArrowLeft } from 'lucide-react';
 import PageTransition from '../app_components/PageTransition';
 import { mockApi } from '../utils/mockApi';
