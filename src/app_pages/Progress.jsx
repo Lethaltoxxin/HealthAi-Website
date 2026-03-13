@@ -5,8 +5,8 @@ import { useState } from 'react';
 import { Heart, Moon, Utensils, Sparkles, Image, Activity } from 'lucide-react';
 import { motion } from 'framer-motion';
 import styles from './Progress.module.css';
-import MetricCard from './MetricCard';
-import AiInsightChip from './AiInsightChip';
+import MetricCard from '../app_components/MetricCard';
+import AiInsightChip from '../app_components/AiInsightChip';
 
 const achievements = [
     { label: '7 Day Streak', icon: '🔥', unlocked: true },

@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft, ShoppingBag, RefreshCw, ChevronDown, ChevronUp, Clock, Flame, Droplets, Wheat, Apple, Target } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import PageTransition from '../components/PageTransition';
+import PageTransition from '../app_components/PageTransition';
 import styles from './NutritionPlan.module.css';
 
 const mealEmojis = { Breakfast: '🌅', Lunch: '☀️', Snack: '🍪', Dinner: '🌙' };

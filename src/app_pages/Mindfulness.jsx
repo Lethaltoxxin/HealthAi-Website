@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { ArrowLeft, Play, Moon, Sun, Wind, Zap, CloudRain, Waves, TreePine, Music, Brain, Mic2 } from 'lucide-react';
 import { motion } from 'framer-motion';
-import MindfulnessPlayer from '../components/mindfulness/MindfulnessPlayer';
+import MindfulnessPlayer from '../app_components/mindfulness/MindfulnessPlayer';
 import styles from './Mindfulness.module.css';
 
 const categories = [

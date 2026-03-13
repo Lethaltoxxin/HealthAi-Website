@@ -3,7 +3,7 @@ import { useRouter } from 'next/navigation';
 
 import React, { useState } from 'react';
 import { Upload, FileText, CheckCircle, AlertCircle, ArrowLeft } from 'lucide-react';
-import PageTransition from '../components/PageTransition';
+import PageTransition from '../app_components/PageTransition';
 import { mockApi } from '../utils/mockApi';
 import { trackEvent } from '../utils/analytics';
 import styles from './LabReport.module.css';
