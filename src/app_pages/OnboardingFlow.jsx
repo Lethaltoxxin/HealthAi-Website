@@ -26,7 +26,7 @@ export default function OnboardingFlow() {
     });
     const [direction, setDirection] = useState(1);
     const navigate = useRouter();
-    const { currentUser } = useAuth();
+    const { currentUser } = useAuth() || {};
 
     const updateData = (key, value) => {
         setData(prev => ({ ...prev, [key]: value }));

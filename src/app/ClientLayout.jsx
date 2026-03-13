@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import BottomNavigation from '../app_components/BottomNavigation';
+import { AuthProvider } from '../context/AuthContext';
 export default function ClientLayout({ children }) {
     const pathname = usePathname();
     const isLandingPage = pathname === '/' || pathname === '/intro';
@@ -74,7 +75,9 @@ export default function ClientLayout({ children }) {
                 transition={{ duration: 0.8, delay: 1.8 }}
                 style={{ paddingBottom: !isLandingPage ? '80px' : '0px', minHeight: '100vh', background: 'var(--bg-primary, #0d0914)' }}
             >
-                {children}
+                <AuthProvider>
+                    {children}
+                </AuthProvider>
             </motion.div>
             {!isLandingPage && <BottomNavigation />}
         </>

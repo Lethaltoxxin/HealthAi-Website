@@ -7,7 +7,7 @@ import styles from './Nutrition.module.css';
 export default function Nutrition() {
     // === STATE MANAGEMENT ===
     const [profile, setProfile] = useState(() => {
-        const saved = localStorage.getItem('healthai_nutrition_profile');
+        if (typeof window === "undefined") return null; const saved = localStorage.getItem("healthai_nutrition_profile");
         return saved ? JSON.parse(saved) : null;
     });
 
