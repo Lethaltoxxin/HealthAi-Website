@@ -3,7 +3,7 @@ import Groq from "groq-sdk";
 const API_KEY = process.env.NEXT_PUBLIC_GROQ_API_KEY;
 
 if (!API_KEY) {
-    console.error(
+    console.warn(
         "❌ NEXT_PUBLIC_GROQ_API_KEY is not set! Add it to your .env file and restart the dev server."
     );
 }
@@ -105,7 +105,7 @@ export async function sendHealthMessage(messages, userMessage) {
 
         return { text: cleanText, confidence };
     } catch (error) {
-        console.error("❌ sendHealthMessage error:", error);
+        console.warn("❌ sendHealthMessage error:", error);
 
         // Provide more specific error messages
         if (error.message?.includes("invalid_api_key") || error.message?.includes("API key") || error.status === 401) {
@@ -206,7 +206,7 @@ CONFIDENCE:XX`;
 
         return { text: cleanText, confidence };
     } catch (error) {
-        console.error("❌ analyzeFileContent error:", error);
+        console.warn("❌ analyzeFileContent error:", error);
         throw error;
     }
 }
